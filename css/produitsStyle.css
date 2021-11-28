@@ -1,0 +1,409 @@
+@import "template.css";
+
+body {
+  background-image: linear-gradient(90deg, #29323c 0%, #485563 100%) !important;
+  max-width: 100%;
+  height: 90%;
+}
+
+span {
+  color: #3aafa9;
+}
+
+.beforeAll {
+  margin: 20vh 18vw -15vh 18vw !important;
+  background-color: white;
+  border-radius: 50px !important;
+}
+
+/* .befBeforeAll {
+	padding: 0 10vw 0 10vw;
+} */
+
+.all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 1fr 100px 2fr;
+  /* margin: 20vh 20vh -20vh 20vh; */
+
+  font-size: 16px;
+  line-height: 30px;
+  /* padding: 0 5vh 0 5vh; */
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.intro {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  border-radius: 30px;
+  height: 70%;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.intro h2 {
+  font-weight: 700;
+  margin: auto 2vw;
+}
+
+.caracteristic {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  margin-bottom: 10vh;
+}
+
+/* LIST STYLE */
+
+/* box-shadow */
+ol.gradient-list > li::before,
+ol.gradient-list > li {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+
+/*** STYLE ***/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding: 0 10vh 0 3vh;
+}
+ol.gradient-list > li {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+ol.gradient-list > li::before,
+ol.gradient-list > li::after {
+  background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+ol.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #1d1f20;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+ol.gradient-list > li:nth-child(10n + 1):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 2):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 3):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 4):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 5):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 6):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 7):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li + li {
+  margin-top: 3rem;
+}
+
+/* End LIST STYLE */
+
+.img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+
+  /* padding: 10vh; */
+  /* box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05); */
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 95%;
+  height: auto;
+}
+
+.img > img {
+  /* width: 100%;
+	height: 100%; */
+
+  width: fit-content;
+}
+
+.underline--magical {
+  color: black !important;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
+
+#custo {
+  /* display: grid;
+  grid-column: 1/3;
+  grid-row-start: 3;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 50px;
+  margin-top: -100px; */
+
+  display: block;
+  padding: 20px 100px;
+  margin-top: 100px;
+  grid-row-start: 3;
+  grid-column: 1/3;
+}
+
+.customRight p {
+  margin-top: 50px;
+  font-size: 2rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.05rem !important;
+}
+
+#custo img {
+  width: 300px;
+  height: 300px;
+  margin-right: 0;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* REVIEWS */
+
+.reviews {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  margin-top: 30vh !important;
+  margin-bottom: 40vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.reviews > img {
+  width: 40%;
+  height: auto;
+  border-radius: 50px;
+  margin-top: 5vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* .card {
+	position: fixed;
+	margin: 40vh 5vh 10vh 5vh;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10% 0 2% 0; 
+    width: 35%; */
+/* padding: 8rem 0 2rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("../img/pPage/bg-pattern-card.svg");
+    background-repeat: repeat-x;
+    background-size: 62.30529595015577vh;
+	flex-grow: 1;
+	border-radius: 40px;
+	-webkit-backdrop-filter: hue-rotate(99deg);
+}  */
+
+/* .card:last-child {
+	filter: hue-rotate(99deg);
+} */
+
+/* .card img {
+	border-radius: 50%;
+    border: 5px solid white;
+    background-color: white;
+	width: 15vh;
+	margin-top: 9vh;
+}
+
+.card span {
+    color: #a2b29f;
+    margin: 7px;
+}
+
+.description {
+	padding: 1vh 1.5vw 3vh 1.5vw;
+} */
+
+/* End REVIEWS */
+
+@media only screen and (max-width: 1200px) {
+  #custo {
+    /* grid-column-start: 1;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 800px;
+    margin-bottom: -200px;
+    width: 60vw;
+    padding: 0 8vw 0 8vw; */
+    grid-row-start: 4;
+  }
+
+  .customRight {
+    padding: 1.25rem;
+  }
+  .customRight p {
+    margin-top: 50px;
+    font-size: 1.75rem !important;
+    line-height: 2.5rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.05rem !important;
+  }
+
+  .all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 12% 1fr 100px 50%;
+  }
+
+  .intro {
+    /* font-size: 13px; */
+    padding: 5vh 3vw;
+  }
+
+  .img {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 60%; */
+  }
+
+  .caracteristic {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+
+  .reviews {
+    margin-top: 0 !important;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews h1 {
+    margin-top: 55vh;
+  }
+
+  .reviews .card {
+    margin: 20px 0;
+  }
+
+  .reviews .card img:last-child {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nouveaute.intro p h2 {
+    background-color: red;
+    font-size: 12px;
+  }
+  .intro h2 {
+    font-size: 16px;
+  }
+  .all {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40vh 1fr;
+  }
+  .img {
+    width: 40vw;
+    height: auto;
+  }
+  .pasImg {
+    display: none;
+  }
+  .reviews img {
+    width: 80%;
+  }
+  .caracteristic {
+    margin-top: -30vh !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .all {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40vh 1fr 1fr;
+  }
+  .img {
+    width: 90%;
+    height: auto;
+  }
+
+  .beforeAll {
+    margin: 20vh 8vw -15vh 8vw !important;
+  }
+  #custo {
+    /* margin: 1000px 0 -200px 0px !important;
+    grid-column-start: 1;
+    grid-row-start: 3; */
+  }
+  #custo img {
+    width: 100%;
+    height: 350px;
+  }
+}
