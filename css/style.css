@@ -1467,7 +1467,7 @@ p {
     grid-template-rows: 60% 1fr;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -15vh;
+    margin-bottom: 15vh;
   }
 
   #secu img {
