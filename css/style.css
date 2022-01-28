@@ -926,7 +926,7 @@ p {
 
 #pub {
   min-height: 40vh;
-  background: var(--secondary-color);
+  background: #dfe9e8;
   padding: 5rem;
 }
 

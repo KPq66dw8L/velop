@@ -116,9 +116,9 @@ ol.gradient-list > li::before {
   padding: 0.125em 0.25em;
   z-index: 1;
 }
-ol.gradient-list > li:nth-child(10n + 1):before {
+/* ol.gradient-list > li:nth-child(10n + 1):before {
   background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
-}
+} */
 ol.gradient-list > li:nth-child(10n + 2):before {
   background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
 }
@@ -135,6 +135,9 @@ ol.gradient-list > li:nth-child(10n + 6):before {
   background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
 }
 ol.gradient-list > li:nth-child(10n + 7):before {
+  background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
+}
+ol.gradient-list > li:nth-child(10n + 8):before {
   background: linear-gradient(135deg, #3aafa9 0%, #def2f1 100%);
 }
 ol.gradient-list > li + li {
