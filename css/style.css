@@ -302,8 +302,8 @@ p {
   position: absolute;
   top: 15rem;
   right: 20vw;
-  width: 15rem;
-  height: 15rem;
+  width: 40rem;
+  height: 40rem;
   z-index: 100;
   transform: rotate(15deg);
 }
@@ -1472,7 +1472,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
   .about {
     margin: 0;
   }
@@ -1574,6 +1574,10 @@ p {
     width: 100%;
     height: 50vh;
   }
+  .vignette {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -1591,10 +1595,10 @@ p {
     margin-top: -20vh !important;
   }
   .vignette {
-    top: 10rem;
-    right: 0vw;
-    width: 10rem;
-    height: 10rem;
+    top: 0rem;
+    right: -15vw;
+    width: 25rem;
+    height: 25rem;
   }
   /* Pub section */
 
