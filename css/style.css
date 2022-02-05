@@ -1,10 +1,29 @@
 /* @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap'; */
-
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.ttf") format('truetype');
+}
 :root {
   --main-color: #3aafa9;
   --secondary-color: #def2f1;
   --third-color: #17252a;
-  --body-font: "Space Grotesk", sans-serif;
+  --body-font: "Montserrat", sans-serif;
   --bigest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -313,6 +332,7 @@ p {
   width: fit-content;
   font-size: 4rem;
   position: relative;
+  font-weight: 400;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;

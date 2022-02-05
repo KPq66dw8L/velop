@@ -1,5 +1,26 @@
 @import "template.css";
 
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.ttf") format('truetype');
+}
+
 body {
   background-image: linear-gradient(90deg, #29323c 0%, #485563 100%) !important;
   max-width: 100%;
@@ -52,7 +73,7 @@ span {
 }
 
 .intro h2 {
-  font-weight: 700;
+  font-weight: 400;
   margin: auto 2vw;
 }
 
@@ -201,6 +222,7 @@ ol.gradient-list > li + li {
 
 .customRight p {
   margin-top: 50px;
+  font-weight: 300;
   font-size: 2rem !important;
   line-height: 2.5rem !important;
   font-weight: 300 !important;
