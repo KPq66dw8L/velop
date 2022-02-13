@@ -478,11 +478,7 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   margin-top: 800px;
-<<<<<<< HEAD
-  margin-bottom: -50vh;
-=======
   margin-bottom: -30vh;
->>>>>>> master
   /* gap: 50px; */
   height: fit-content;
 }
