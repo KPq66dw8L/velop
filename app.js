@@ -27,12 +27,14 @@ menu_item.forEach((item) => {
 	});
 })
 
-$(document).ready(function () {
-  // MDB Lightbox Init
-  $(function () {
-    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-  });
-});
+// $(document).ready(function () {
+//   // MDB Lightbox Init
+//   $(function () {
+//     $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+//   });
+// });
+
+
 
 /* REVIEWS */
 /* jQuery.noConflict();
