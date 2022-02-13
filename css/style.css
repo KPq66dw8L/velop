@@ -469,6 +469,10 @@ p {
 
 /* secu section */
 
+/* .cuse2 {
+  margin-bottom: -800px!important;
+} */
+
 #secu {
   display: grid;
   grid-template-columns: 1fr 1fr;
