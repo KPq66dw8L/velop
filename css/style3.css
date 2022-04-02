@@ -1,0 +1,244 @@
+#args {
+    margin: 0;
+    padding: 0 10rem;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.args_accroche {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap : 3rem;
+    flex-grow: 0;
+    flex-basis: 1;
+}
+
+.args_accroche h1 {
+    font-size: 64px;
+    font-style: normal;
+}
+
+.args_accroche h2 {
+    text-align:justify;
+    font-size: 24px;
+    width: 23vw;
+}
+
+
+#args p {
+    font-size: 1.5rem;
+    color: black;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    flex-grow: 0;
+    flex-basis: 1;
+}
+
+#args span {
+    background-color: #3aafa9;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.args_description ul {
+    list-style: disc;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.args_description ul li {
+    margin-left: 4rem;
+}
+
+
+#security {
+    padding: 0 10rem;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#security h1 {
+    font-size: 64px;
+    font-style: normal;
+    color: #3aafa9;
+    margin: 0;
+    margin-bottom: 5rem;
+    padding: 0;
+    text-align: justify;
+    width: 50vw;
+}
+
+#security p {
+    font-size: 2rem;
+}
+
+#security .security_description {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0 0 5rem;
+}
+
+#security .security_description .p1 {
+    color: black;
+    text-align: justify;
+    width: 20vw;
+}
+
+#security span {
+    background-color: #BB004B;
+    color: #f1f1f1;
+}
+
+#security .security_description p {
+    font-size: 2.5rem;
+    width: 20vw;
+    color: black;
+    text-align: justify;
+    margin: 0 0 0 2rem;
+    padding: 0;
+}
+
+#security svg {
+    fill: #BB004B;
+    margin: 0 3rem;
+}
+
+#leboncoin {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+#leboncoin h1 {
+    font-size: 64px;
+    font-style: normal;
+    color: #3aafa9;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    width: fit-content;
+    margin-bottom: 5rem;
+}
+
+#leboncoin p {
+    font-size: 2.5rem;
+    text-align: justify;
+    width: 50vw;
+}
+
+#leboncoin span {
+    border-bottom:2px solid black;
+}
+
+@media only screen and (max-width: 850px) {
+    #args p {
+        font-size: 1.5rem;
+        width: 40vw;
+    }
+
+    .args_accroche h2 {
+        font-size: 24px;
+        width: 40vw;
+    }
+
+    #security {
+        height: 45vh;
+    }
+
+    #leboncoin {
+        margin-bottom: 10rem;
+    }
+
+    #security h1 {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    #security .security_description {
+        width: 100%;
+    }
+
+    #security > div .p1 {
+        width: 28vw;
+    }
+
+    #leboncoin h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #args {
+        padding: 0 5rem;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .args_accroche h1 {
+        font-size: 6rem;
+    }
+
+    .args_accroche h2 {
+        font-size: 24px;
+        width: 80vw;
+    }
+
+    #args p {
+        width: 80vw;
+    }
+
+    .args_description ul {
+        font-size: 1.7rem;
+    }
+
+    #security p, #leboncoin p {
+        width: 80vw;
+    } 
+
+    #security h1, #leboncoin h1 {
+        font-size: 3rem;
+    }
+
+    #security {
+        height: 100vh;
+    }
+
+    #security h1 {
+        width: 100%;
+    }
+
+    #security .security_description {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #security .security_description p {
+        width: 80vw;
+    }
+
+    #security .security_description .p1 {
+        width: 80vw;
+    }
+
+    #security svg {
+        margin: 4rem 0;
+    }
+
+    #leboncoin h1 {
+        padding: 0;
+        width: 80vw;
+    }
+}
