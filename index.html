@@ -13,27 +13,24 @@
   <!-- SWIPER-->
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-  
-  <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
  
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css?version=60">
-  <link rel="stylesheet" href="./css/reviews.css?version=48">
-  <!-- GOOGLE FONTS -->
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap"> -->
+  <link rel="stylesheet" href="./css/style.css?version=70">
+  <link rel="stylesheet" href="./css/reviews.css?version=60">
+  <link rel="stylesheet" href="./css/style3.css">
 
+  <script src="lazy-load.js" defer></script>
 </head>
 
 <body>
+  
   <!-- Header -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>V</span>él<span>O</span>ptimised</h1>
-          </a>
-        </div>
+
+        
+
         <div class="nav-list">
           <div class="hamburger">
             <div class="bar"></div>
@@ -41,9 +38,15 @@
           <ul>
             <li><a href="#hero" data-after="Home">Accueil</a></li>
             <li><a href="#about" data-after="About">Concept</a></li>
+            <li>
+              <div class="brand">
+                <a href="#hero">
+                  <h1><span>V</span>él<span>O</span>ptimised</h1>
+                </a>
+              </div>
+            </li>
             <li><a href="#swiperid" data-after="Service">Kits</a></li>
-            <li><a href="produits.html" data-after="Service">Produits</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#hero" data-after="Contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -55,13 +58,21 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <img src="./img/veloptimised-parrainage-vignette.png" class="vignette" alt="vignette-parrainage">
-      <div>
-        <h1>Un vélo électrique, <span></span></h1>
-        <h1>haut de gamme,<span></span></h1>
-        <h1>40% moins cher<span></span></h1>
-        <a href="https://veloptimised.fr/contact" type="button" class="cta">Nous contacter</a>
-        <a href="produits.html" type="button" class="cta">Produits</a>
+      <div class="hero-over-text">
+       
+        <div class="hero-text">
+          <h1><i>N</i>e jetez pas votre bon vélo, </h1>
+          <h1><span>transformez</span> le</h1> 
+        
+        </div>
+        <div class="hero-over-img">
+          <img src="./img/veloptimised_logo3D_blanc.webp" alt="">
+        </div>
+        
+        
+        <div class="containerCta">
+          <a href="https://veloptimised.fr/contact" type="button" class="cta">Nous contacter</a>
+        </div>
       </div>
     </div>
   </section>
@@ -73,14 +84,7 @@
 <br>
 
 <div class="video">
-  <iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/WnWQ5jNW4Ug" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen></iframe>
+  <iframe id="lazy-load" defer width="560" height="315" data-src="https://www.youtube.com/embed/0LjqJ8xdyAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
   <!-- About Section -->
@@ -88,159 +92,76 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img  class="abImg" src="./img/veloptimised_about_graph+legende.png" alt="img">
+          <img  class="abImg" src="./img/veloptimised_about_graph+legende.png" alt="Bike drawn sketch with text">
         </div>
       </div>
       <div class="col-right">
         <h1 class="section-title">L'idée est <span class="underline--magical">simple</span></h1>
-        <p>Vous nous contactez, nous définissons ensemble une motorisation adaptée à votre vélo et à vos désirs.
-          Notre équipe vient ensuite chercher votre vélo et met en place l'électrification en quelques jours. <br> <b class="underline--magical">Nouveauté:</b> Livraison disponible sur Clermont-Ferrand et alentours proches ! </p>
+        <p>
+          Venez avec votre vélo rencontrer un de nos conseillers et essayez gratuitement un des vélos que nous avons transformé. 
+          Puis revenez quelques jours plus tard chercher votre Véloptimised.
+        </p>
 
       </div>
     </div>
   </section>
   <!-- End About Section -->
 
-<!-- Services section  -->
-  <section class="services section bd-container" id="#boxerase">
-
-
-      <!-- <div class="graphs">
-        <img class="graphPrix ex1" src="./img/veloptimised_services_graphAxesPc.png" alt="">
-        <img class="graphPrix ex2" src="./img/veloptimised_services_graphAxesMob.png" alt="">
-      </div> -->
-      <h2 class="sectiontitle">Comment atteint-on ce prix?</h2>
-<br>
-<br>
-  <div class="boxPond">
-    <div class="services__container bd-grid">
-      <div class="services__data">
-        <i class='bx bxs-palette services_icon'></i>
-        <h3 class="services__title">1</h3>
-        <p class="services__description">Pas besoin de racheter un pédalier, une fourche ou un cadre, les vôtres suffisent amplement.</p>
-        <img src="img/veloptimised_services_box-2_pedalier.png" alt="" style="width: 70%; height:auto;margin-left: 3vw;">
-      </div>
-
-      <div class="services__data">
-        <i class='bx bxs-data services_icon'></i>
-        <h3 class="services__title">2</h3>
-        <p class="services__description">VélOptimised va directement chercher la qualité à l’usine et court-circuite au minimum 6 intermédiaires augmentant chacun le prix du vélo.</p>
-        <img src="img/veloptimised_services_box-1_usinge.JPG" alt="" style="width: 70%; height:auto;margin-top: 2vh;margin-left: 3vw;">
-      </div>
-
-    </div>
-  </div>
-  </section>
-  <!-- End services section  -->
-
-  <!-- Lumieres/securite -->
-  <section id="secu" class="secu1">
-    <div class="secuLeft">
-      <h1>Chez <span>V</span>él<span>O</span>ptimised, nous ne rigolons pas avec votre <span class="underline--magical">sécurité</span>,</h1>
-      <p class="secup">c’est pourquoi nous vous <span>offrons</span> et installons un kit de <span>deux</span> lampes haute qualité pour voir et être vu. </p>
-    </div>
-    <img loading="lazy" class="secuImg" src="./img/veloptimised_secu-1_lumieres.png" alt="">
-    
-  </section>
-  <section id="secu" class="secu2">
-    <div class="secuLeft">
-      <h1>Pour encore plus de <span class="underline--magical">sécurité</span>,</h1> <br>
-      <p class="secup">VélOptimised vous conseil le marquage <br> bicycode, en partenariat avec <span class="underline--magical">Vélo-Cité 63</span>
-      <br><a href="https://www.velocite63.fr/Marquage" style="color: salmon;">> En savoir plus.</a></p>
-    </div>
-    <a class="secuImg img_velocite" href="https://www.velocite63.fr/Marquage" target=”_blank”><img loading="lazy" src="./img/partenaires/veloptimised_velocite63_logo.png" alt=""></a>
-    
-    
-  </section>
-<!-- End Lumieres/securite -->
-
-
-
-  <!-- Carrousel-->
-  <section class="swiper swiper1" id="swiperid">
-    <h1>Une multitude de kits compatibles à votre vélo</h1>
-
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-1_slide-1_sketch.png"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-1_slide-2_sketch.png"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-1_slide-3_sketch.png"></div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-
-
-  </section>
-
-  <!-- Fin Carrousel-->
-
-
   <!-- Carte produit-->
 
   <section class="produit" id="produit">
     <div class="card">
       <div class="imgBx">
-        <img src="img/veloptimised_carte-produit.png" alt="Bike">
+        <img loading="lazy" src="img/veloptimised_carte-produit.png" alt="Bike">
       </div>
       <div class="contentBx">
         <h3>Tout nos kits, sur n'importe quel vélo à un seul prix :</h3>
         <h2 class="price">790€</h2>
         <a href="https://veloptimised.fr/contact" class="buy">Contactez</a>
-        <a href="produits.html" class="buy">Produits</a>
       </div>
     </div>
   </section>
 
- <!-- Retour utilisateurs-->
-
- <section id="preCom">
-   <div id="commentSection">
-     <img class="coms" src="./img/veloptimised_com_all.png" alt="">
-     <img class="com1" src="./img/veloptimised_com-1.png" alt="">
-     <img class="com2" src="./img/veloptimised_com-2.png" alt="">
-     <img class="com3" src="./img/veloptimised_com-3.png" alt="">
-   </div>
-
-   <a href="https://docs.google.com/forms/d/e/1FAIpQLSex_kwO4NKrmw67hD2vwkyLWDab8VTnee0_vx41Wi0D3tkRxg/viewform?usp=sf_link" class="ctaa">
-  <span>Laissez nous un message!</span>
-  <svg width="13px" height="10px" viewBox="0 0 13 10">
-    <path d="M1,5 L11,5"></path>
-    <polyline points="8 1 12 5 8 9"></polyline>
-  </svg>
-</a>
-
- </section>
- <!-- Swipper init pour le futur -->
- <section id="pub">
-   <h1 > Ils parlent de nous! </h1>
-   <div class="swiper-container pub_container">
-    <div class="swiper-wrapper"> 
-      <a class="pub_logo" target="_blank" href="./img/la-montagne/veloptimised_lamontagne_article.jpg"><img src="./img/la-montagne/veloptimised_lamontagne_logo.png"></a>
-      <a class="pub_logo" target="_blank" href="https://youtu.be/WnWQ5jNW4Ug"><img src="./img/fr3/veloptimised_fr3_logo.svg.png"></a>
+  <section id="args">
+    <div class="args_accroche">
+      <h1>La différence</h1>
+      <h2>Entre un vélo neuf à 800€ et un véloptimised</h2>
     </div>
-  </div>
- </section>
- 
- <!-- End Retour utilisateurs-->
+    <div class="args_description">
+      <p>
+        <span>Les performances.</span>
+        Tout comme un téléphone, un vélo moins puissant durera moins longtemps.
+        Notre but est ainsi de proposer une électrification haut de gamme qui dure dans le temps :
+        
+      </p>
+      <ul>
+        <li>Autonomie : 60km à 110km</li>
+        <li>Puissance : 350W pour 52 N.m</li>
+        <li>18 mois de garantie sur la batterie</li>
+        <li>Des pièces détachées accessible pendant 10 ans</li>
+      </ul>
+    </div>
+  </section>
+
+
   
 <!-- Deuxieme carrousel -->
   <section class="swiper swiper2" id="swiperid">
-
+    <h1>95% des vélos sont électrifiables :</h1>
 
     <div class="swiper-container">
-      <div class="swiper-wrapper" loading="lazy">
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-1.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-2.png"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-3.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-4.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-5.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-6.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-7.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-8.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-9.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-10.jpg"></div>
-        <div class="swiper-slide"><img src="img/veloptimised_carrousel-2_slide-12.jpg"></div>
+      <div class="swiper-wrapper" >
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-1.jpg"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-2.jpg"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-3.jpg"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-4.webp"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-5.webp"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-6.jpg"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-7.webp"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-8.jpg"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-9.webp"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-10.jpg"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/veloptimised_carrousel-2_slide-12.webp"></div>
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -249,37 +170,71 @@
 
   </section>
 
+  <section id="security">
+    <div>
+      <h1>Hors de question de rouler sur un vélo <span>dangereux</span> !</h1>
+      
+      <div class="security_description">
+        <p class="p1"> 
+          Pour chaque vélo nous :
+          révisons votre vélo,
+          changeons vos freins si nécessaire et adaptons votre transmission.
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+        <p>Nous offrons des lampes avant et arrière pour voir et être vu.</p>
+      </div>
 
-
-
-
-
-
-
-  <!-- Contact Section -->
-  <section id="contact">
-
-
-    <div class="button-center">
-        <a href="https://veloptimised.fr/contact"> 
-        <span>Contact</span>
-        <div class="liquid"></div>
-      </a>
     </div>
-
-
-
-
+    <!-- <img loading="lazy" class="secuImg" src="./img/veloptimised_secu-1_lumieres.png" alt="High quality bike light picture, installed by Veloptimised"> -->
+    
   </section>
-  <!-- End Contact Section -->
+
+
+  <section id="leboncoin">
+    <h1>Pas de vélo ? <span>pas de problème</span>,</h1>
+    <p>
+      Notre équipe recherche pour vous un vélo d'occasion à électrifier selon vos critères, 
+      et le transforme dans l’un de nos ateliers pour vous fournir un vélo électrique clef en main.
+    </p>
+  </section>
+
+ <!-- Retour utilisateurs-->
+
+ <section id="preCom">
+  <div id="commentSection">
+    <img class="coms" loading="lazy" src="./img/veloptimised_com_all.png" alt="commentaires mobiles">
+    <img class="com1" loading="lazy" src="./img/veloptimised_com-1.png" alt="commentaire 1">
+    <img class="com2" loading="lazy" src="./img/veloptimised_com-2.png" alt="commentaire 2">
+    <img class="com3" loading="lazy" src="./img/veloptimised_com-3.png" alt="commentaire 3">
+  </div>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSex_kwO4NKrmw67hD2vwkyLWDab8VTnee0_vx41Wi0D3tkRxg/viewform?usp=sf_link" class="ctaa">
+ <span>Laissez nous un message!</span>
+ <svg width="13px" height="10px" viewBox="0 0 13 10">
+   <path d="M1,5 L11,5"></path>
+   <polyline points="8 1 12 5 8 9"></polyline>
+ </svg>
+</a>
+
+</section>
+
+<!-- End Retour utilisateurs-->
+
+<section id="pub">
+  <h1 > Ils parlent de nous! </h1>
+  <div class="swiper-container pub_container">
+   <div class="swiper-wrapper"> 
+     <a class="pub_logo" target="_blank" href="./img/la-montagne/veloptimised_lamontagne_article.jpg"><img loading="lazy" src="./img/la-montagne/veloptimised_lamontagne_logo.png"></a>
+     <a class="pub_logo" target="_blank" href="https://youtu.be/WnWQ5jNW4Ug"><img loading="lazy" src="./img/fr3/veloptimised_fr3_logo.svg.png"></a>
+   </div>
+ </div>
+</section>
 
 
   <!-- Map-->
 
   <section class="map" id="map">
-      <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403071.9046417344!2d-0.38538178708673126!3d46.240988520151284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71bdd7f2e8507%3A0x3994306038a06f22!2sClermont-Ferrand!5e0!3m2!1sen!2sfr!4v1623747090306!5m2!1sen!2sfr" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe id="map-lazy" defer data-src="https://www.google.com/maps/d/u/2/embed?mid=1_WcL0P08HzvrmBGIsLPmvElx2hRAMadu&ehbc=2E312F&z=6" width="640" height="480"></iframe>
   </section>
 
   <!-- Footer -->
@@ -328,11 +283,8 @@
 
   <!-- End Footer -->
   <script src="./app.js"></script>
+
   
 </body>
-<script>
-  // var image = document.querySelectorAll('#hero');
-  // console.log(image.style);
-</script>
 
 </html>

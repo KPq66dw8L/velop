@@ -13,9 +13,6 @@
 	--smaller-font-size: .75rem;
 }
 
-
-
-
 * {
 	/* padding: 0;
 	margin: 0; */
@@ -125,8 +122,9 @@ p {
 }
 #header .nav-bar {
 	display: flex;
+
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
 	max-width: 1300px;
